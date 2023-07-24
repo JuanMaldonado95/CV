@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Fuentes 
+
+.font1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+// Colores Botones
+
+$pink: #ff23ad;
+$lemon: #ebde30;
+$green: #00ffb3;
+$blue: #00aeff;

@@ -1,0 +1,127 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #393838, #393838);
+    color: white
+}
+
+.info-basica,
+.info-Estudio,
+.info-Experiencia {
+    width: 80%;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.info-list .col-sm-6 {
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+// .info-list span {
+//     font-weight: bold;
+// }
+
+.info-estudios,
+.info-experiencia {
+    margin-top: 20px;
+}
+
+.info-columnaestudios,
+.info-columnaexperiencia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.info-list .col-sm-6,
+.info-columnaestudios .col-sm-6,
+.info-columnaexperiencia .col-sm-6 {
+    flex-basis: 50%;
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.info-list span,
+.info-columnaestudios span,
+.info-columnaexperiencia span {
+    color: #00aeff
+}
+
+h2 {
+    color: #00aeff;
+    text-align: center;
+    font-size: 24px;
+}
+
+.my-button {
+    display: flex;
+    align-items: center;
+    background-color: #474646;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 174, 255, 0.7);
+  }
+  
+  .my-button:hover {
+    background-color: #00aeff;
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.7);
+  }
+
+.icon_estilos {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon_estilos {
+    display: flex;
+    list-style: none;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon_estilos li {
+    margin-right: 20px;
+
+}
+
+.icon_estilos li a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.5s ease;
+}
+
+.icon_estilos li a:hover {
+    color: #00aeff;
+}
+
+.icon_estilos span {
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}

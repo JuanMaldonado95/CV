@@ -1,0 +1,59 @@
+<section class="contactme-container">
+    <h2>CONTACTAME</h2>
+    <div class="columns-container">
+        <div class="contactme-lateral">
+            <div class="contact__information">
+                <div class="contact__icon">
+                    <mat-icon>contact_phone</mat-icon>
+                </div>
+                <div class="contact__text">
+                    <h3 class="contact__title">LLamame</h3>
+                    <span class="contact__subtitle">+57 305 311 4648</span>
+                </div>
+            </div>
+            <div class="contact__information">
+                <div class="contact__icon">
+                    <mat-icon>contact_mail</mat-icon>
+                </div>
+                <div class="contact__text">
+                    <h3 class="contact__title">Correo</h3>
+                    <span class="contact__subtitle">juan.maldonado-r@hotmail.com</span>
+                </div>
+            </div>
+            <div class="contact__information">
+                <div class="contact__icon">
+                    <mat-icon>home</mat-icon>
+                </div>
+                <div class="contact__text">
+                    <h3 class="contact__title">Ubicacion</h3>
+                    <span class="contact__subtitle">Zipaquira, Colombia</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactme-principal">
+            <div class="contact-card">
+                <form [formGroup]="form" (ngSubmit)="send()" class="">
+                    <h2> Contactame</h2>
+                    <div class="contact-form">
+                        <!-- <label for="name" class="leading-7 text-sm text-gray-600">Nombre</label> -->
+                        <input formControlName="name" type="text" id="name" name="name" placeholder="Nombre" />
+                    </div>
+                    <div class="contact-form">
+                        <!-- <label for="email" class="leading-7 text-sm text-gray-600">Email</label> -->
+                        <input formControlName="email" type="email" id="email" name="email" placeholder="Email" />
+                    </div>
+                    <div class="contact-form">
+                        <!-- <label for="message" class="leading-7 text-sm text-gray-600">Mensaje</label> -->
+                        <textarea formControlName="message" id="message" name="message"
+                            placeholder="Mensaje"></textarea>
+                    </div>
+
+                </form>
+                <button type="submit" class="my-button">
+                    Enviar Mensaje <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
