@@ -1,7 +1,8 @@
 <section class="contactme-container">
     <h2>CONTACTAME</h2>
+    <hr>
     <div class="columns-container">
-        <div class="contactme-lateral">
+        <div class="card contactme-lateral">
             <div class="contact__information">
                 <div class="contact__icon">
                     <mat-icon>contact_phone</mat-icon>
@@ -31,10 +32,10 @@
             </div>
         </div>
 
-        <div class="contactme-principal">
-            <div class="contact-card">
+        <div class="card contactme-principal">
+            <div class="card contact-card">
                 <form [formGroup]="form" (ngSubmit)="send()" class="">
-                    <h2> Contactame</h2>
+                    <h3>Contactame</h3>
                     <div class="contact-form">
                         <!-- <label for="name" class="leading-7 text-sm text-gray-600">Nombre</label> -->
                         <input formControlName="name" type="text" id="name" name="name" placeholder="Nombre" />
@@ -48,7 +49,6 @@
                         <textarea formControlName="message" id="message" name="message"
                             placeholder="Mensaje"></textarea>
                     </div>
-
                 </form>
                 <button type="submit" class="my-button">
                     Enviar Mensaje <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
