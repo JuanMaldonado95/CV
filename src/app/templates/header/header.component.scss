@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom, #131313, #131313);
+  background: linear-gradient(to bottom, #000000, #000000);
 }
 
 .nav_container {
@@ -16,14 +16,16 @@
 .nav_list.grid {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   list-style: none;
+  flex-direction: column;
 }
 
 .nav_item {
   margin-right: 10px;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 .nav_link {
@@ -203,4 +205,3 @@ $blue : #00aeff;
   height: 0;
   width: 1px;
 }
-

@@ -15,6 +15,11 @@ import { ContactmeComponent } from './pages/contactme/contactme.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import { IonicModule } from '@ionic/angular';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    IonicModule
+    IonicModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

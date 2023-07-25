@@ -1,9 +1,12 @@
-<header class="headear font1">
-    <nav class="nav_container">
+<!-- Menu superior -->
+
+<!-- <header class="headear font1">
+    <nav class="nav_container" #sidenav mode="over">
         <a href="#" class="nav_log">JD</a>
         <ul class="nav_list grid">
             <li class="nav_item">
-                <a href="#home" class="nav_link link-cambio" data=Inicio routerLink="/" routerLinkActive="active">
+                <a href="#home" class="nav_link link-cambio" data=Inicio routerLink="/" routerLinkActive="active"
+                    (click)="clickHandler()">
                     <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"> Home </mat-icon>
                     <span>Inicio</span>
                     <i class="link--link-cambio-b-tr"></i>
@@ -11,7 +14,8 @@
                 </a>
             </li>
             <li class="nav_item">
-                <a href="#About" class="nav_link link-cambio" routerLink="/about" routerLinkActive="active">
+                <a href="#About" class="nav_link link-cambio" routerLink="/about" routerLinkActive="active"
+                    (click)="clickHandler()">
                     <mat-icon aria-hidden="false" aria-label="About" fontIcon="perm_identity"> perm_identity
                     </mat-icon>
                     <span>About</span>
@@ -20,7 +24,8 @@
                 </a>
             </li>
             <li class="nav_item">
-                <a href="#Skills" class="nav_link link-cambio" routerLink="/skills" routerLinkActive="active">
+                <a href="#Skills" class="nav_link link-cambio" routerLink="/skills" routerLinkActive="active"
+                    (click)="clickHandler()">
                     <mat-icon aria-hidden="false" aria-label="Example list icon" fontIcon="list"> list </mat-icon>
                     <span>Skills</span>
                     <i class="link--link-cambio-b-tr"></i>
@@ -28,7 +33,8 @@
                 </a>
             </li>
             <li class="nav_item">
-                <a href="#Contacts" class="nav_link link-cambio" routerLink="/contactme" routerLinkActive="active">
+                <a href="#Contacts" class="nav_link link-cambio" routerLink="/contactme" routerLinkActive="active"
+                    (click)="clickHandler()">
                     <mat-icon aria-hidden="false" aria-label="Example contacts icon" fontIcon="contacts"> contacts
                     </mat-icon>
                     <span>Contactme</span>
@@ -37,7 +43,7 @@
                 </a>
             </li>
             <li class="nav_item">
-                <a href="#Login" class="nav_link link-cambio">
+                <a href="#Login" class="nav_link link-cambio" (click)="clickHandler()">
                     <mat-icon aria-hidden="false" aria-label="Example input icon" fontIcon="input">input </mat-icon>
                     <span>Login</span>
                     <i class="link--link-cambio-b-tr"></i>
@@ -45,12 +51,89 @@
                 </a>
             </li>
             <li class="nav_item">
-                <a href="#Login" class="nav_link">
+                <a href="#Login" class="nav_link" (click)="clickHandler()">
                     <mat-icon aria-hidden="false" aria-label="Example brightness_4 icon" fontIcon="brightness_4">
                         brightness_4 </mat-icon>
                 </a>
             </li>
         </ul>
-        
     </nav>
-</header>
+</header> -->
+
+<!-- menu lateral -->
+
+<mat-toolbar class="mat-toolbar">
+    <header>
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <a href="#" class="nav_log">J.D.</a>
+    </header>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container" >
+    <mat-sidenav #sidenav mode="over" [fixedInViewport]="true" [opened]="false" >
+        <nav class="nav_container">
+            <ul class="nav_list grid">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link link-cambio" data=Inicio routerLink="/" routerLinkActive="active"
+                        (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"> Home </mat-icon>
+                        <span>Inicio</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#About" class="nav_link link-cambio" routerLink="/about" routerLinkActive="active"
+                        (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="About" fontIcon="perm_identity"> perm_identity
+                        </mat-icon>
+                        <span>About</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#Skills" class="nav_link link-cambio" routerLink="/skills" routerLinkActive="active"
+                        (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example list icon" fontIcon="list"> list </mat-icon>
+                        <span>Skills</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#Contacts" class="nav_link link-cambio" routerLink="/contactme" routerLinkActive="active"
+                        (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example contacts icon" fontIcon="contacts"> contacts
+                        </mat-icon>
+                        <span>Contactme</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#Login" class="nav_link link-cambio" (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example input icon" fontIcon="input">input </mat-icon>
+                        <span>Login</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#Login" class="nav_link" (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example brightness_4 icon" fontIcon="brightness_4">
+                            brightness_4 </mat-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <section>
+            <router-outlet></router-outlet>
+        </section>
+    </mat-sidenav-content>
+</mat-sidenav-container>

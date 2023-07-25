@@ -4,7 +4,9 @@
     align-items: center;
     text-align: center;
     background: linear-gradient(to bottom, #393838, #393838);
-    color: white
+    color: white;
+    padding-top: 20px;
+    border-bottom: 0.5px solid #6d6b6b;
 }
 
 .info-basica,
@@ -61,6 +63,18 @@
     color: #00aeff
 }
 
+.ptext {
+    text-align: center;
+    
+}
+
+h1 {
+    color: #00aeff;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
 h2 {
     color: #00aeff;
     text-align: center;
@@ -78,12 +92,12 @@ h2 {
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 174, 255, 0.7);
-  }
-  
-  .my-button:hover {
+}
+
+.my-button:hover {
     background-color: #00aeff;
     box-shadow: 0 0 20px rgba(0, 174, 255, 0.7);
-  }
+}
 
 .icon_estilos {
     display: flex;
