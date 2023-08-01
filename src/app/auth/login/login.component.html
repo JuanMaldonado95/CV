@@ -1,0 +1,30 @@
+<div class="full-login" [@fadeInOut]>
+    <div class="login-left">
+        <h1> <strong>Welcome Back!</strong> </h1>
+        <p>Glad to see you again! I'm so happy you logged in.</p>
+    </div>
+    <div class="login-right">
+        <div class="form-login">
+            <mat-card class="center-card">
+                <mat-card-title>Login</mat-card-title>
+                <mat-card-content>
+                    <mat-form-field>
+                        <mat-label>Usuario</mat-label>
+                        <input matInput placeholder="usuario">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" placeholder="contraseña">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button type="submit" class="my-button"> Ingresar </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+.action-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.table {
+  padding: 20px;
+  min-width: 80%;
+}
+
+.table tbody tr td,
+.table thead th,
+.table thead {
+  border: 1px solid #7caef3;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+// .output {
+//   padding: 20px;
+// }
+
+// .delete {
+//   color: red;
+// }
+
+// .done {
+//   color: green;
+// }
+
+// .edit {
+//   color: yellow;
+// }
+
+span.ui-column-resizer {
+  min-width: 100%;
+  height: 100%;
+  //cursor: col-resize;
+}
+
+.containerprincipal {
+  min-height: 100vh;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #7caef3;
+}
+
+hr {
+  width: 80%;
+}
+
+.table-container {
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.my-button {
+  display: flex;
+  align-items: center;
+  background-color: #474646;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 174, 255, 0.7);
+}
+
+.my-button:hover {
+  background-color: #7caef3;
+  box-shadow: 0 0 20px rgba(0, 174, 255, 0.7);
+}
+
+.column-style {
+  color: #7caef3;
+  font-size: 15px;
+}
+
+.row-style {
+  vertical-align: middle;
+}

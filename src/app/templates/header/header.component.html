@@ -71,8 +71,8 @@
     </header>
 </mat-toolbar>
 
-<mat-sidenav-container class="sidenav-container" >
-    <mat-sidenav #sidenav mode="over" [fixedInViewport]="true" [opened]="false" >
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over" [fixedInViewport]="true" [opened]="false">
         <nav class="nav_container">
             <ul class="nav_list grid">
                 <li class="nav_item">
@@ -114,7 +114,28 @@
                     </a>
                 </li>
                 <li class="nav_item">
-                    <a href="#Login" class="nav_link link-cambio" (click)="clickHandler()">
+                    <a href="#InformacionPersonas" class="nav_link link-cambio" routerLink="/informacionpersonas"
+                        routerLinkActive="active" (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example input icon" fontIcon="person">person
+                        </mat-icon>
+                        <span>Información Personas</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#GestionPersonas" class="nav_link link-cambio" routerLink="/gestionpersonas"
+                        (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example input icon" fontIcon="person">person
+                        </mat-icon>
+                        <span>Gestion Personas</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#Login" class="nav_link link-cambio" routerLink="/login" routerLinkActive="active"
+                        (click)="clickHandler()">
                         <mat-icon aria-hidden="false" aria-label="Example input icon" fontIcon="input">input </mat-icon>
                         <span>Login</span>
                         <i class="link--link-cambio-b-tr"></i>
@@ -122,7 +143,16 @@
                     </a>
                 </li>
                 <li class="nav_item">
-                    <a href="#Login" class="nav_link" (click)="clickHandler()">
+                    <a href="#registro" class="nav_link link-cambio" routerLink="/register" (click)="clickHandler()">
+                        <mat-icon aria-hidden="false" aria-label="Example input icon" fontIcon="person">person
+                        </mat-icon>
+                        <span>Registro</span>
+                        <i class="link--link-cambio-b-tr"></i>
+                        <i class="link--link-cambio-b-bl"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#day/night" class="nav_link" (click)="clickHandler()">
                         <mat-icon aria-hidden="false" aria-label="Example brightness_4 icon" fontIcon="brightness_4">
                             brightness_4 </mat-icon>
                     </a>

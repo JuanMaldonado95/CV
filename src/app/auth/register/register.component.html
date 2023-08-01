@@ -1,0 +1,38 @@
+<div class="full-register" [@fadeInOut]>
+    <mat-card class="center-card">
+        <!-- <mat-card-title>Register</mat-card-title> -->
+        <mat-card-content>
+            <form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Nombre(s)" id="firstname" [(ngModel)]="address.firstname"
+                        name="firstname">
+                </mat-form-field>
+
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Apellido(s)" id="lastname" [(ngModel)]="address.lastname"
+                        name="lastname">
+                </mat-form-field>
+
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Correo" id="correo" [(ngModel)]="address.lastname"
+                        name="correo">
+                </mat-form-field>
+
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Contraseña" id="city" [(ngModel)]="address.city" name="city">
+                </mat-form-field>
+
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Confirmación Contraseña" id="state" [(ngModel)]="address.city" name="state">
+                </mat-form-field>
+
+            </form>
+        </mat-card-content>
+        <mat-card-actions class="actions-card">
+            <button type="submit" class="my-button"> Login </button>
+            <button type="submit" class="my-button"> Register </button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
