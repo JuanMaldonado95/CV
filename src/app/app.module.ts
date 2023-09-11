@@ -9,7 +9,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { FooterComponent } from './templates/footer/footer.component';
-import { MatIconModule } from '@angular/material/icon';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ContactmeComponent } from './pages/contactme/contactme.component';
 import { GestionPersonasComponent } from './pages/crud/gestion-personas/gestion-personas.component';
@@ -20,6 +19,7 @@ import { InformacionPersonasComponent } from './pages/crud/informacion-personas/
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -40,6 +40,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { post } from 'jquery';
 import { ConfirmDialogComponent } from './pages/crud/informacion-personas/confirm-dialog/confirm-dialog.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import { HeaderModule } from './templates/header/header.module';
 
 
 @NgModule({
@@ -79,7 +80,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatCheckboxModule,
     HttpClientModule,
     MatNativeDateModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    HeaderModule
 
     // HttpClientModule,
     // NbAuthModule.forRoot({

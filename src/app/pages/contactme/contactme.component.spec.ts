@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactmeComponent } from './contactme.component';
+import { MatIconModule } from '@angular/material/icon';
+import { IonicModule } from '@ionic/angular';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 describe('ContactmeComponent', () => {
   let component: ContactmeComponent;
@@ -8,7 +12,8 @@ describe('ContactmeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactmeComponent ]
+      declarations: [ ContactmeComponent ],
+      imports: [MatIconModule, IonicModule, ReactiveFormsModule]
     })
     .compileComponents();
 
@@ -21,3 +26,5 @@ describe('ContactmeComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

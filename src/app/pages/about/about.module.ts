@@ -10,7 +10,7 @@ import { AboutRoutingModule } from './about-routing.module';
   imports: [
     CommonModule,
     AboutRoutingModule,
-    IonicModule
+    IonicModule,
   ]
 })
 export class AboutModule { }
